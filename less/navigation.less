@@ -1,1 +1,26 @@
 // Navigation code here
+nav {
+   background: @nav-bg;
+   width: 100%;
+//    margin: 15px auto 0;
+   border-bottom: 1px solid @nav-border;
+   .flexbase(column, space-between, center);
+   
+    
+
+    div {
+        padding-bottom: 10px;
+        
+        h1 {
+        font-size: 4rem;
+        padding:10px 0;
+        }
+        
+        a {
+            text-decoration: none;
+            color: @nav-font;
+            font-size: 1.6rem;
+            padding: 0 15px;
+        }
+    }
+}
