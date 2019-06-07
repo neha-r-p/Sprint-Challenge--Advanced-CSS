@@ -10,17 +10,23 @@ nav {
 
     div {
         padding-bottom: 10px;
+        @media @phone {
+            max-width:500px;
+        }
         
         h1 {
         font-size: 4rem;
         padding:10px 0;
+        text-align: center;
         }
         
         a {
             text-decoration: none;
             color: @nav-font;
             font-size: 1.6rem;
+            font-weight: bolder;
             padding: 0 15px;
+        
         }
     }
 }
