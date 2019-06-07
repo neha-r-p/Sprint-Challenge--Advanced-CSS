@@ -200,6 +200,22 @@ footer {
   align-items: center;
   margin-bottom: 3px;
 }
+footer p {
+  animation-duration: 5s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes slidein {
+  from {
+    margin-left: 60%;
+    width: 100%;
+  }
+  to {
+    margin-left: 10%;
+    width: 100%;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
