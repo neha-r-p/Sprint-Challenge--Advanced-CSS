@@ -33,14 +33,26 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+    
+    Both are able to use media queries to change the design of the website based on different viewport sizes. However, adaptive websites still use hard coded widths (e.g. px units), while a fully responsive website uses responsive units, such as rem, em, and % to accomodate more devices, and create better accessibility.
 
 2. Describe what it means to be mobile first vs desktop first.
 
+    Mobile first means that the website is first built for mobile devices, then as the viewport scales up, media queries are used with min-width to create a responsive layout. Desktop first, the website is designed for the desktop and set with media queries that use max-width to respond to a scaled down viewport, such as a tablet or mobile device.
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+
+    This sets the base multiplier at 10px in the document for font size. This makes font sizes easier to calculate while still giving room for scaling and accessibility. For example, 1.8rem with this setup would be 18px, and 3rem would be 30px!
 
 4. How would you describe preprocessing to someone new to CSS?
 
+    Preprocessing is a way to eliminate redundancy in CSS, and create a system where things can be changed for the whole website with ease. This is accomplished by using preprocesser specific syntax to assign variables and mixins to code that is repeated in the CSS, and "calling" that code with the shorter names assigned. All of this is compiled into the CSS document and displayed as it normally would be, but the files will be more organized to change.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    My favorite concept is the ability to use many .less files based on the sections of the page, and allow the compiler to do it's magic. This keeps it more organized for me because I know which .less file I need to go into to change something in a specific part of the page!
+
+    The concept that gives me the most trouble is how to keep straight the properties that were called in a mixin, and not cancel those out by accident, or double it and create a monster in my code! Practice makes perfect :)
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
